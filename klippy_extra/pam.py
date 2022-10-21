@@ -19,8 +19,8 @@ class PAM:
         self.probe_y_step = float((self.bed_mesh.bmc.orig_config['mesh_max'][1] - self.bed_mesh.bmc.orig_config['mesh_min'][1]) / self.bed_mesh.bmc.orig_config['y_count'])
 
     def cmd_MESH_CONFIG(self, param):
-        self.x0 = param.get_float('X0', None, -1000, maxval=1000) 
         self.x0 = param.get_float('X0', None, -1000, maxval=1000)
+        self.y0 = param.get_float('Y0', None, -1000, maxval=1000)
         self.x1 = param.get_float('X1', None, -1000, maxval=1000)
         self.y1 = param.get_float('Y1', None, -1000, maxval=1000)
         if self.x0 < 0 or self.y0 < 0:

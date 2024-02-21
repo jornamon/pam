@@ -1,3 +1,5 @@
+> # This is now implemeted natively in RatOS via macros. This is not needed anymore.
+
 # PAM for RatOS
 Print Area Mesh for RatOS
 
